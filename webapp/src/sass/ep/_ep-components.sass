@@ -806,7 +806,31 @@
     .connect-box
       &:not(:last-child)
         margin-bottom : 20px
-        
+
+// 커넥티드카 연동 서비스 
+.connected-guide
+  padding-top : 43px
+  .guide-section
+    padding : 0 23px 30px
+  .guide-title
+    margin : 30px 0 28px
+    text-align : center
+    img 
+      height : 28px
+  .guide-text
+    margin-left : 8px
+    text-indent : -7px
+    font-size : 12px
+    .imgbox
+      margin : 10px 0 30px
+      img
+        display : block
+    &:not(:last-child)
+      &::after
+        content : ''
+        display : block
+        border-bottom : 1px dashed #aeaeae
+        opacity : 0.5
 
 // bottom-sheet 낮은높이ver
 .is-lower-height
