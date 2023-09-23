@@ -42,65 +42,67 @@
 
         <div id="container">
             <!-- Contents -->
-            <div id="contents" class="container type-2 complete-wrap baro-resv-wrap">
-                <div class="inner top-bg-box">
-                  <div>
-                    <div class="title-area">
-                      <h3 class="title is-2">
-                        에너지플러스 씽씽
-                      </h3>
-                    </div>
-                    <div>
-                      <p><small><i class="icon icon-card-point"></i>소나타</small></p>
-                      <p><small><i class="icon icon-card-point"></i>휘발유 <button>수정</button></small></p>
-                    </div>
-                  </div>
+            <div id="contents" class="container type-2 complete-wrap connected-mod">
+              <div class="inner top-bg-box">
+                <div class="title-area">
+                  <h3 class="title">
+                    에너지플러스 씽씽
+                  </h3>
+                  <span><i class="icon-help"></i><span class="blind">도움말</span></span>
                 </div>
-                <div class="inner is-padding-top">
-                  <div class="is-fullheight">
-                    <div class="card-area card-wrap">
-                      <div class="card reservation special">
-                        <div class="card-content">
-                          <div class="reservation-period">
-                            <p>주행가능거리</p>
-                            <p class="price-area">
-                              <strong class="price is-family-secondary"> 300</strong>
-                              km
+                <ul class="card-info-box">
+                  <li class="card-info-item"><small><i class="icon icon-card-car"></i>소나타</small></li>
+                  <li class="card-info-item"><small><i class="icon icon-card-credit"></i>휘발유 <span><button class="btn-modify"><span class="blind">수정</span></button></span></small></li>
+                </ul>
+              </div>
+              <div class="inner is-padding-top">
+                <div class="is-fullheight">
+                  <div class="card-area card-wrap">
+                    <div class="card reservation special">
+                      <span class="tooltip-dark tooltip-noimage">바로 주유가 필요해요</span>
+                      <div class="card-content">
+                        <div class="reservation-period">
+                            <p>주행가능거리
+                                <button class="btn-refresh">
+                                    <span class="blind">새로고침</span>
+                                </button>
                             </p>
-                          </div>
-                          <div>
-                            <button>주유쿠폰받기</button>
+                          <p class="price-area">
+                            <strong class="price is-family-secondary"> 300</strong>
+                            km
+                          </p>
+                        </div>
+                        <div class="buttons">
+                            <button class="button is-small is-black">주유 쿠폰 받기</button>
+                        </div>
+                        <div class="mycoupon">
                             <p>이달의 발급 쿠폰 <span>2/0</span></p>
-                          </div>
                         </div>
                       </div>
                     </div>
+                  </div>
+                  <div>
+                    가까운주유소
                     <div>
-                        가까운주유소
-                        <div>
-                            슬라이드배너
-                        </div>
+                        슬라이드배너
                     </div>
-                    <!-- *** 유의사항 , 하단버튼 ***-->
-                    <div class="bottom-noti-wrap">
-                      <div class="inner">
-                        <!-- 유의사항 -->
-                        <div class="box-bottom-noti box-bottom-type">
-                          <p class="title is-5 title-noti">유의사항</p>
-                          <ul class="list-noti-area">
-                            <li class="item-txt-noti">- 설정된 금액보다 적게 주유할 경우 쿠폰/포인트 사용이 불가합니다.</li>
-                          </ul>
-                          <!-- button -->
-                          <div class="buttons is-bottom-type">
-                            <button class="button is-half is-outline">취소</button>
-                            <button class="button is-half is-dark">예약완료</button>
-                          </div>
-                        </div>
+                    <div class="buttons">
+                        <button class="button is-large is-black is-fullwidth">바로주유</button>
+                    </div>
+                  </div>
+
+                  <div class="is-button-fixed">
+                    <div class="inner">
+                      <!-- button -->
+                      <div class="buttons is-bottom-type">
+                        <button class="button is-half is-outline">연동 해제</button>
+                        <button class="button is-half is-dark">연장하기</button>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
+            </div>
             <!-- // Contents -->
         </div>
     </div>

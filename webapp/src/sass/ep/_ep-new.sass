@@ -3151,3 +3151,44 @@ i.icon-npay-badge
 .list-rez-station > li .group-box-rez.is-disabled
   background-color: #f0f0f0
   pointer-events: none
+
+// 커넥티드카 연동 서비스
+.connected-mod
+    .inner.is-padding-top
+        margin-top: 132px
+    .inner.top-bg-box
+        .title-area
+            margin-top: 30px
+        .title
+            margin-bottom: 0
+            font-size: 20px
+            line-height: 32px
+    .icon-help
+        position: absolute
+        right: 0
+        &::after
+            background-color: transparent
+            border: 1px solid $ep-nero
+            color: $ep-nero
+            line-height: 14px
+    .card-info-box
+        li
+            margin-bottom: 10px
+    .tooltip-dark
+        position: absolute
+        z-index: 10
+        left: 20px
+        top: -10px
+        &::after
+            content: ''
+            position: absolute
+            left: 12px
+            bottom: -12px
+            border-left: 4px solid transparent
+            border-right: 4px solid transparent
+            border-top: 6px solid #0f1f2e
+            border-bottom: 6px solid transparent
+    .card-content .mycoupon
+        position: absolute
+        right: 24px
+        bottom: 21px
