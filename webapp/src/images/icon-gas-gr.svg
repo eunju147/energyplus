@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+    <defs>
+        <clipPath id="4vlpyf8ldb">
+            <use xlink:href="#e7ui5r44ra"/>
+        </clipPath>
+    </defs>
+    <path style="fill:none" d="M0 0h20v20H0z"/>
+    <g data-name="사각형 4087" transform="translate(3.565 3)" style="stroke:#0f1f2e;fill:none">
+        <rect width="10" height="15" rx="2" style="stroke:none"/>
+        <rect x=".5" y=".5" width="9" height="14" rx="1.5" style="fill:none"/>
+    </g>
+    <g data-name="사각형 4092" transform="translate(5.565 6)" style="fill:#3ddb87;stroke:#0f1f2e">
+        <rect width="6" height="4" rx="1" style="stroke:none"/>
+        <rect x=".5" y=".5" width="5" height="3" rx=".5" style="fill:none"/>
+    </g>
+    <path data-name="패스 93388" d="M0 9.363V1.011A1.082 1.082 0 0 1 1.124 0a1.067 1.067 0 0 1 1.123 1.011v.527" transform="rotate(180 7.656 8.125)" style="stroke-miterlimit:10;stroke:#0f1f2e;fill:none"/>
+    <g data-name="사각형 23703" transform="translate(14.189 6.887)" style="fill:#efeff2;stroke:#0f1f2e">
+        <rect width="2.247" height="3.996" rx="1" style="stroke:none"/>
+        <rect x=".5" y=".5" width="1.247" height="2.996" rx=".5" style="fill:none"/>
+    </g>
+    <g data-name="사각형 23704" transform="rotate(-30 17.85 -23.595)" style="fill:#0f1f2e;stroke:#0f1f2e">
+        <rect id="e7ui5r44ra" width=".749" height="2.247" rx=".375" style="stroke:none"/>
+        <path d="M0 .5h.75M.5 0v2.247m.25-.5H0m.25.5V0" style="clip-path:url(#4vlpyf8ldb);fill:none"/>
+    </g>
+</svg>

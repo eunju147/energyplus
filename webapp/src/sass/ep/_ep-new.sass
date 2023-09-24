@@ -3155,7 +3155,7 @@ i.icon-npay-badge
   pointer-events: none
 
 // 커넥티드카 연동 서비스
-.connected-mod
+.connected-mod.complete-wrap
     .inner.is-padding-top
         height: auto
         margin-top: 132px
@@ -3198,8 +3198,19 @@ i.icon-npay-badge
     .card-content
         .distance
             display: flex
+            font-size: 12px
             .btn-refresh
+                margin-top: -2px
                 margin-left: 7px
+                &::before
+                    widht: 20px
+                    height: 20px
+        .reservation-period
+            padding-bottom: 5px
+        .price-area,.price-area .price
+            font-size: 24px
+            line-height: 29px
+            height: auto
         .emoji
             position: absolute
             right: 32px
@@ -3214,24 +3225,72 @@ i.icon-npay-badge
             position: absolute
             right: 24px
             bottom: 21px
-    .connected-case1
+            .coupon-count
+                display: block
+                color: $ep-dark-gray-3
+                font-size: 12px
+                font-family: $family-secondary
+                text-align: center
+                strong
+                    padding: 0 6px
+                    font-size: 15px
+                    font-weight: bold
+                .received
+                    color: $ep-navy
+                .receive
+                    color: $ep-dark-gray-3
+
+    .connected-case1.card.reservation
         .emoji
             background-image: url('/images/icon_emoji_happy.svg')
-    .connected-case2
+    .connected-case2.card.reservation
         .tooltip-dark
             background-color : $ep-red
             &::after
                 border-top: 6px solid $ep-red
-        .price-area,.price-area .price
-            color: #f8891b !important
+        .price-area, .price-area .price
+            color: #f8891b
         .emoji
             background-image: url('/images/icon_emoji_cold.svg')
-    .connected-case3
+    .connected-case3.card.reservation
         .tooltip-dark
             background-color : $ep-red
             &::after
                 border-top: 6px solid $ep-red
-        .price-area,.price-area .price
-            color: $ep-red !important
+        .price-area, .price-area .price
+            color: $ep-red
         .emoji
             background-image: url('/images/icon_emoji_fear.svg')
+    .station-list
+        margin: 0 -24px
+        .list-tit
+            display: flex
+            padding: 0 24px
+            strong
+                padding-left: 22px
+        .list-wrap
+            .swiper-container
+                padding: 17px 24px 20px
+            .swiper-slide
+                position: relative
+                overflow: hidden
+                max-width: 42%
+                border-radius: 8px
+                box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1);
+                background-color: #fff
+            .station-info
+                padding: 12px
+            .station-distance
+                padding: 11px
+                background-color: $ep-green-3
+                color: #fff
+        .buttons
+            padding: 0 24px
+            .button-baro
+                text-indent: -99999px
+                font-size: 0
+                width: 100%
+                background-image: url('/images/main-baro-logo.svg')
+                background-repeat: no-repeat
+                background-size: 86px
+                background-position: center

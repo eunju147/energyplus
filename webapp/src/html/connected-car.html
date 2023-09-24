@@ -9,6 +9,7 @@
     <title>Energy Plus 기능개선</title>
 
     <!-- Library CSS -->
+    <link rel="stylesheet" href="lib/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/ep-style.css">
     <!-- // Library CSS -->
 
@@ -75,10 +76,11 @@
                                 <i class="emoji"></i>
                             </div>
                             <div class="buttons">
-                                <button class="button is-small is-black">주유 쿠폰 받기</button>
+                                <button class="button is-small" disabled>주유 쿠폰 받기</button>
                             </div>
                             <div class="mycoupon">
-                                <p>이달의 발급 쿠폰 <span>2/0</span></p>
+                                <a href="#" class="link-underline-txt size-s">이 달 발급 쿠폰</a>
+                                <span class="coupon-count"><strong claas="received">2</strong>/<strong class="receive">0</strong></span>
                             </div>
                         </div>
                     </div>
@@ -102,7 +104,8 @@
                                 <button class="button is-small is-black">주유 쿠폰 받기</button>
                             </div>
                             <div class="mycoupon">
-                                <p>이달의 발급 쿠폰 <span>2/0</span></p>
+                                <a href="#" class="link-underline-txt size-s">이 달 발급 쿠폰</a>
+                                <span class="coupon-count"><strong claas="received">0</strong>/<strong class="receive">2</strong></span>
                             </div>
                         </div>
                     </div>
@@ -126,18 +129,77 @@
                                 <button class="button is-small is-black">주유 쿠폰 받기</button>
                             </div>
                             <div class="mycoupon">
-                                <p>이달의 발급 쿠폰 <span>2/0</span></p>
+                                <a href="#" class="link-underline-txt size-s">이 달 발급 쿠폰</a>
+                                <span class="coupon-count"><strong claas="received">1</strong>/<strong class="receive">2</strong></span>
                             </div>
                         </div>
                     </div>
                   </div>
-                  <div>
-                    가까운주유소
-                    <div>
-                        슬라이드배너
+                  
+                  <div class="station-list">
+                    <p class="list-tit">
+                        <strong>가까운 주유소</strong>
+                        <button class="btn-refresh">
+                            <span class="blind">새로고침</span>
+                        </button>
+                    </p>
+
+                    <div class="list-wrap">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+
+                                <div class="swiper-slide">
+                                    <div class="station-info">
+                                        <ul>
+                                            <li>휘발유</li>
+                                            <li>2,023원</li>
+                                            <li>GS타워주유소</li>
+                                        </ul>
+                                    </div>
+                                    <div class="station-distance">
+                                        1.25km
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="station-info">
+                                        <ul>
+                                            <li>휘발유</li>
+                                            <li>2,023원</li>
+                                            <li>GS타워주유소</li>
+                                        </ul>
+                                    </div>
+                                    <div class="station-distance">
+                                        1.25km
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="station-info">
+                                        <ul>
+                                            <li>휘발유</li>
+                                            <li>2,023원</li>
+                                            <li>GS타워주유소</li>
+                                        </ul>
+                                    </div>
+                                    <div class="station-distance">
+                                        1.25km
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
+                    <script>
+                        // 슬라이드 배너 Swiper
+                        var swiper = new Swiper(".list-wrap .swiper-container", {
+                            slidesPerView: "auto",
+                            centeredSlides: false,
+                            spaceBetween: 12,
+                            freeMode: true,
+                        });
+                    </script>
+
                     <div class="buttons">
-                        <button class="button is-large is-black is-fullwidth">바로주유</button>
+                        <button type="button" class="button  is-black button-baro">바로주유</button>
                     </div>
                   </div>
 
