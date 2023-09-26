@@ -3156,11 +3156,35 @@ i.icon-npay-badge
 
 // 커넥티드카 연동 서비스
 .connected-mod.complete-wrap
+    .top-notice
+        padding: 12px 12px 12px 24px
+        background-color: #f5f5f5
+        p
+            position: relative
+            padding-left: 19px
+            font-size: 12px
+            color: #da1e28
+            &::before
+                content: '!'
+                background: #da1e28
+                border-radius: 100%
+                width: 14px
+                height: 14px
+                position: absolute
+                top: 3px
+                left: 0
+                text-align: center
+                line-height: 12px
+                color: #ffffff
+                font-size: 12px
+                font-weight: 100
+                letter-spacing: -.26px
     .inner.is-padding-top
         height: auto
-        margin-top: 132px
+        margin-top: -70px
         padding-bottom: 138px !important
     .inner.top-bg-box
+        position: relative
         .title-area
             margin-top: 30px
         .title
@@ -3175,9 +3199,8 @@ i.icon-npay-badge
             border: 1px solid $ep-nero
             color: $ep-nero
             line-height: 14px
-    .card-info-box
-        li
-            margin-bottom: 10px
+    .card-info-box li
+            margin-bottom: 8px
     .tooltip-dark
         position: absolute
         z-index: 10
@@ -3267,7 +3290,15 @@ i.icon-npay-badge
             display: flex
             padding: 0 24px
             strong
+                margin-right: 4px
                 padding-left: 22px
+                font-size: 15px
+                color: $ep-navy
+                background-image: url('/images/icon_gas_gr.svg')
+                background-repeat: no-repeat
+            .btn-refresh::before
+                widht: 20px
+                height: 20px
         .list-wrap
             .swiper-container
                 padding: 17px 24px 20px
@@ -3280,10 +3311,27 @@ i.icon-npay-badge
                 background-color: #fff
             .station-info
                 padding: 12px
+                .type
+                    font-size: 12px
+                    color: $ep-navy
+                .price
+                    margin-bottom: 2px
+                    font-size: 15px
+                    line-height: 24px
+                    color: $ep-green-3
+                    em
+                        font-size: 20px
+                        font-family: $family-secondary
+                        font-weight: 700
+                .name
+                    font-size: 12px
+                    color: $ep-navy
             .station-distance
-                padding: 11px
+                padding: 8px 8px 8px 40px
                 background-color: $ep-green-3
                 color: #fff
+                background: $ep-green-3 url('/images/icon-direction-charge.png') 18px 11px no-repeat
+                background-size: 14px auto
         .buttons
             padding: 0 24px
             .button-baro
