@@ -3294,3 +3294,94 @@ i.icon-npay-badge
                 background-repeat: no-repeat
                 background-size: 86px
                 background-position: center
+
+.connected-mod-modal
+    margin-bottom: 17px
+    .selection-title
+        font-size: 24px
+        line-height: 32px
+        margin-bottom: 18px
+        color: $ep-black
+        strong
+            font-weight: 700
+    .notification-txt
+        margin-bottom: 8px
+        color: $ep-black
+        font-size: 15px
+        line-height: 16px
+        text-align: center
+        // &+.notification-txt
+        //     margin-top: 8px
+        .num
+            font-size: 20px
+            line-height: 32px
+            font-family: $family-secondary
+            strong
+                font-weight: 700
+                margin-right: 2px
+                color: $ep-black
+                em
+                    font-style: normal
+                    font-weight: 500
+        .emphasize
+            position: relative
+            .num
+                position: relative
+                z-index: 1
+                color: $ep-green-3
+                strong
+                    color: $ep-green-3
+                em
+                    font-family: $family-sans-serif
+                    // filter: blur(10px)
+            .txt
+                position: relative
+                z-index: 1
+            &::after
+                content: ''
+                display: block
+                position: absolute
+                left: -5px
+                right: -4px
+                bottom: 2px
+                height: 6px
+                background-color: #aaffd2
+    .guidance-map
+        .maplist
+            display: flex
+            justify-content: space-between
+            margin-bottom: 20px
+            .map-icon
+                input
+                    position: absolute
+                    visibility: hidden
+                    cursor: pointer
+                i
+                    overflow: hidden
+                    display: block
+                    width: 64px
+                    height: 64px
+                    background-size: contain
+                    text-indent: -999px
+                &.tmap i
+                    background-image: url(/images/icon_tmap.png)
+                &.tmap input:checked + i
+                    background-image: url(/images/icon_tmap_on.png)
+                &.kakao i
+                    background-image: url(/images/icon_kakaomap.png)
+                &.kakao input:checked + i
+                    background-image: url(/images/icon_kakaomap_on.png)
+                &.naver i
+                    background-image: url(/images/icon_navermap.png)
+                &.naver input:checked + i
+                    background-image: url(/images/icon_navermap_on.png)
+                &.apple i
+                    background-image: url(/images/icon_applemap.png)
+                &.apple input:checked + i
+                    background-image: url(/images/icon_applemap_on.png)
+                &.one i
+                    background-image: url(/images/icon_onemap.png)
+                &.one input:checked + i
+                    background-image: url(/images/icon_onemap_on.png)
+                
+        
