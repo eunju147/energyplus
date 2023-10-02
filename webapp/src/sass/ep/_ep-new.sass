@@ -3157,28 +3157,41 @@ i.icon-npay-badge
 // 커넥티드카 연동 서비스
 .connected-mod.complete-wrap
     .top-notice
-        padding: 12px 12px 12px 24px
+        position: relative
+        padding: 12px 12px 12px 43px
         background-color: #f5f5f5
-        p
+        &::before
+            position: absolute
+            left: 24px
+            top: 14px
+            content: '!'
+            background: #da1e28
+            border-radius: 100%
+            width: 14px
+            height: 14px
+            text-align: center
+            line-height: 12px
+            color: #ffffff
+            font-size: 10px
+            font-weight: 100
+            letter-spacing: -.26px
+        a  
+            display: block
+            overflow: hidden
             position: relative
-            padding-left: 19px
-            font-size: 12px
-            color: #da1e28
-            &::before
-                content: '!'
-                background: #da1e28
-                border-radius: 100%
-                width: 14px
-                height: 14px
-                position: absolute
-                top: 3px
-                left: 0
-                text-align: center
-                line-height: 12px
-                color: #ffffff
+            p
+                white-space: nowrap
+                color: #da1e28
                 font-size: 12px
-                font-weight: 100
-                letter-spacing: -.26px
+                line-height: 18px
+                animation: flowing 8s linear infinite
+                transform: translateX(100%)
+                @-webkit-keyframes flowing
+                    100% 
+                        transform: translateX(-100%)
+                @keyframes flowing
+                    100% 
+                        transform: translateX(-100%)
     .inner.is-padding-top
         height: auto
         margin-top: -70px
@@ -3195,10 +3208,13 @@ i.icon-npay-badge
         position: absolute
         right: 0
         &::after
+            width: 14px
+            height: 14px
             background-color: transparent
             border: 1px solid $ep-nero
+            font-size: 10px
             color: $ep-nero
-            line-height: 14px
+            line-height: 12px
     .card-info-box li
             margin-bottom: 8px
     .tooltip-dark
@@ -3327,6 +3343,7 @@ i.icon-npay-badge
                     font-size: 12px
                     color: $ep-navy
             .station-distance
+                display: block
                 padding: 8px 8px 8px 40px
                 background-color: $ep-green-3
                 color: #fff
@@ -3404,7 +3421,17 @@ i.icon-npay-badge
                     position: absolute
                     visibility: hidden
                     cursor: pointer
+                    &:checked + i::after
+                        content: ''
+                        position: absolute
+                        top: 4px
+                        left: 7px
+                        right: 7px
+                        bottom: 9px
+                        border: 3px solid $ep-green-3
+                        border-radius: 50%
                 i
+                    position: relative
                     overflow: hidden
                     display: block
                     width: 64px
@@ -3413,24 +3440,14 @@ i.icon-npay-badge
                     text-indent: -999px
                 &.tmap i
                     background-image: url(/images/icon_tmap.png)
-                &.tmap input:checked + i
-                    background-image: url(/images/icon_tmap_on.png)
                 &.kakao i
                     background-image: url(/images/icon_kakaomap.png)
-                &.kakao input:checked + i
-                    background-image: url(/images/icon_kakaomap_on.png)
                 &.naver i
                     background-image: url(/images/icon_navermap.png)
-                &.naver input:checked + i
-                    background-image: url(/images/icon_navermap_on.png)
                 &.apple i
                     background-image: url(/images/icon_applemap.png)
-                &.apple input:checked + i
-                    background-image: url(/images/icon_applemap_on.png)
                 &.one i
                     background-image: url(/images/icon_onemap.png)
-                &.one input:checked + i
-                    background-image: url(/images/icon_onemap_on.png)
 
 .connected-guide-modal
     &.bottom-sheet-body
