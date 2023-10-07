@@ -2713,3 +2713,19 @@
           font-size : 0.9rem    
         &.is-outline
           background-size : 80%    
+
+.header-right
+    .connected-car-main
+        position : relative
+        display : flex
+        width : 82px
+        margin-right : 4px
+        &.on::after
+            content : ''
+            position : absolute
+            right : -4px
+            top : 0
+            width : 4px
+            height : 4px
+            border-radius : 50% 50%
+            background-color : $ep-red
