@@ -3234,7 +3234,7 @@ i.icon-npay-badge
             border-right: 4px solid transparent
             border-top: 6px solid $ep-navy
             border-bottom: 6px solid transparent
-    .card-content
+    .card .card-content
         .distance
             display: flex
             font-size: 12px
@@ -3245,7 +3245,11 @@ i.icon-npay-badge
                     widht: 20px
                     height: 20px
         .reservation-period
-            padding-bottom: 5px
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            align-items: center
+            padding-bottom: 9px
         .price-area,.price-area .price
             font-size: 24px
             line-height: 29px
@@ -3283,21 +3287,21 @@ i.icon-npay-badge
         .emoji
             background-image: url('/images/icon_emoji_happy.svg')
     .connected-case2.card.reservation
-        .tooltip-dark
-            background-color : $ep-red
-            &::after
-                border-top: 6px solid $ep-red
-        .price-area, .price-area .price
-            color: #f8891b
+        // .tooltip-dark
+        //     background-color : $ep-red
+        //     &::after
+        //         border-top: 6px solid $ep-red
+        // .price-area, .price-area .price
+        //     color: #f8891b
         .emoji
             background-image: url('/images/icon_emoji_cold.svg')
     .connected-case3.card.reservation
-        .tooltip-dark
-            background-color : $ep-red
-            &::after
-                border-top: 6px solid $ep-red
-        .price-area, .price-area .price
-            color: $ep-red
+        // .tooltip-dark
+        //     background-color : $ep-red
+        //     &::after
+        //         border-top: 6px solid $ep-red
+        // .price-area, .price-area .price
+        //     color: $ep-red
         .emoji
             background-image: url('/images/icon_emoji_fear.svg')
     .station-list
@@ -3475,6 +3479,8 @@ i.icon-npay-badge
       margin : 10px 0 30px
       img
         display : block
+      & +.imgbox
+        margin-top : -17px 
     &:not(:last-child)
       &::after
         content : ''
