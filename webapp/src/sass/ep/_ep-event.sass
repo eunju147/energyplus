@@ -5223,6 +5223,8 @@
         padding-top: 15px
         strong
             font-weight: 700
+    .ep-card-footer-list
+        padding-left: 12px
     .ep-card-loan-text
         padding-top: 20px
         margin-bottom: 40px
@@ -5239,7 +5241,6 @@
             justify-content: center
             height: 70px
             border-radius: 14px 14px
-            background-size: contain
             line-height: 18px
             letter-spacing: -1px
             padding-top: 4px
@@ -5258,4 +5259,11 @@
             &.page-link
                 background-color: $ep-navy
                 font-size: 16px
-            
+@media (max-width: 300px)
+    .card-edition2-2310 .ep-card-go-to-link & > a
+        border-radius: 14px 14px
+        font-size: 15px
+        &.phone-number::before
+            margin-right: 5px
+        &.page-link
+            font-size: 13px
