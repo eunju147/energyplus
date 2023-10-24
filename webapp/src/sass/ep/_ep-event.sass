@@ -5205,6 +5205,69 @@
     .kakao-popup .bottom-sheet-body .inner
         justify-content : center
 
+
+// 현대카드에디션2 2023-10
+.card-edition2-2310
+    .ep-card-section3
+        .inner
+            padding: 0
+        .ep-card-exper li
+            padding: 0
+            max-width: 375px
+    .recieve-top
+        padding: 0
+        .recieve-top-imgbox
+            padding: 0
+            max-width: 375px
+    .ep-card-footer-text > p + p
+        padding-top: 15px
+        strong
+            font-weight: 700
+    .ep-card-footer-list
+        padding-left: 12px
+    .ep-card-loan-text
+        padding-top: 20px
+        margin-bottom: 40px
+        &> p + p
+            padding-top: 10px
+    .ep-card-go-to-link
+        display: flex
+        gap: 5px
+        padding: 0 30px
+        & > a
+            display: flex
+            flex: 1 0 0
+            align-items: center
+            justify-content: center
+            height: 70px
+            border-radius: 14px 14px
+            line-height: 18px
+            letter-spacing: -1px
+            padding-top: 4px
+            &.phone-number
+                color: $ep-nero
+                background-color: $ep-white
+                &::before
+                    content: ''
+                    display: block
+                    width: 20px
+                    height: 20px
+                    margin: 0 10px 2px 0
+                    background-image:url(#{$image-path}edition-btn-phonelink-img.png)
+                    background-size: contain
+
+            &.page-link
+                background-color: $ep-navy
+                font-size: 16px
+@media (max-width: 300px)
+    .card-edition2-2310 .ep-card-go-to-link & > a
+        border-radius: 14px 14px
+        font-size: 15px
+        &.phone-number::before
+            margin-right: 5px
+        &.page-link
+            font-size: 13px
+
 // 커넥티드카
 .connected-car-event
     section
