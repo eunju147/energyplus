@@ -189,6 +189,13 @@
 
                                     </div>
                                 </div>
+
+                                <!-- 가까운 주유소 없는 경우 -->
+                                <div class="nostation-container" style="display: none">
+                                    <div class="nostation-content">
+                                        <p class="txt">고객님 주변 100km 내에<br> 바로주유 가능한 주유/충전소가 없습니다.</p>
+                                    </div>
+                                </div>
                             </div>
                             <script>
                                 // 슬라이드 배너 Swiper
@@ -196,6 +203,7 @@
                                     slidesPerView: "auto",
                                     centeredSlides: false,
                                     spaceBetween: 12,
+                                    slidesOffsetAfter: 0,
                                     freeMode: true,
                                 });
                             </script>
