@@ -5234,6 +5234,8 @@
         display: flex
         gap: 5px
         padding: 0 30px
+        left: auto
+        max-width: 960px
         & > a
             display: flex
             flex: 1 0 0
@@ -5258,12 +5260,10 @@
 
             &.page-link
                 background-color: $ep-navy
-                font-size: 16px
+
 @media (max-width: 300px)
     .card-edition2-2310 .ep-card-go-to-link & > a
         border-radius: 14px 14px
         font-size: 15px
         &.phone-number::before
             margin-right: 5px
-        &.page-link
-            font-size: 13px
