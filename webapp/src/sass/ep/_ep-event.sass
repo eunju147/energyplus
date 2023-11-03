@@ -5234,6 +5234,8 @@
         display: flex
         gap: 5px
         padding: 0 30px
+        left: auto
+        max-width: 960px
         & > a
             display: flex
             flex: 1 0 0
@@ -5258,38 +5260,11 @@
 
             &.page-link
                 background-color: $ep-navy
-                font-size: 16px
-@media (max-width: 300px)
-    .card-edition2-2310 .ep-card-go-to-link & > a
-        border-radius: 14px 14px
-        font-size: 15px
-        &.phone-number::before
-            margin-right: 5px
-        &.page-link
-            font-size: 13px
 
-// 커넥티드카
-.connected-car-event
-    section
-        position : relative
-        background-color : #f7f7f7
-        .buttons
-            position : absolute
-            left : 6.4%
-            right : 6.4%
-            bottom : 5.720823798627002%
-            width : auto
-        img
-            display : block
-        .txt1, .txt2
-            padding-left : 9.866666666666667%
-            padding-right : 17.6%
-            padding-top : 50px
-            padding-bottom : 26px
-        .img1
-            padding-bottom : 34px
-            border-bottom : dashed 1px #aeaeae
-        .img2
-            padding-top : 34px
-            margin-bottom : -84px
-            
+@media (max-width: 300px)
+    .card-edition2-2310 .ep-card-go-to-link
+        padding: 0 20px
+        & > a
+            height: 64px
+            &.phone-number::before
+                margin-right: 4px
