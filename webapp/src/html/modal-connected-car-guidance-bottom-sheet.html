@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, viewport-fit=cover"> -->
+    <meta name="viewport" content="user-scalable=0, initial-scale=1.0, maximum-scale=1.0, width=device-width, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=yes">
+    <title>Energy Plus 기능개선</title>
+
+    <!-- Library CSS -->
+    <link rel="stylesheet" href="lib/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/ep-style.css">
+    <!-- // Library CSS -->
+
+    <!-- Library JS -->
+    <script src="https://unpkg.com/vue/dist/vue.min.js"></script> <!-- vue CDN -->
+    <script src="https://unpkg.com/buefy/dist/buefy.min.js"></script> <!-- buefy CDN -->
+    <script src="lib/swiper/swiper-bundle.min.js"></script>
+
+    <!-- // Library JS -->
+    <script src="js/ui.js"></script>
+</head>
+
+<body>
+    <div class="skipNavi">
+        <a href="#">본문 바로가기</a>
+    </div>
+    <div id="wrap" role="main">
+        <!-- Header -->
+        <header id="header">
+            <div class="inner">
+                <a href="#" class="is-back">
+                    <i class="icon-arrow-left"></i>
+                    <span class="blind">이전</span>
+                </a>
+                <div class="has-text-centered">
+                    <h2 class="title is-3">커넥티드카 연동 서비스</h2>
+                </div>
+            </div>
+        </header>
+        <!-- // Header -->
+
+        <div id="container">
+            <!-- Contents -->
+            <div id="contents" class="container type-2 complete-wrap connected-mod">
+                <div class="top-notice">
+                    <a href="#"><p>고객님의 커넥티드카 연동 유효기간이 30일 이하로 남았습니다. 만료시 서비스 이용이 불가하오니, ‘연장하기‘ 버튼을 클릭하여 연동상태를 유지하세요!</p></a>
+                </div>
+                <div class="inner top-bg-box">
+                    <div class="title-area">
+                        <h3 class="title">
+                        에너지플러스 씽씽
+                        </h3>
+                        <span class="connect-help"><span class="blind">이용안내</span></span>
+                    </div>
+                    <ul class="card-info-box">
+                        <li class="card-info-item"><small><i class="icon icon-card-car"></i>소나타</small></li>
+                        <li class="card-info-item"><small><i class="icon icon-card-credit"></i>휘발유 <span><button class="btn-modify"><span class="blind">수정</span></button></span></small></li>
+                    </ul>
+                </div>
+                <div class="inner is-padding-top">
+                    <div class="is-fullheight">
+                        <div class="card-area card-wrap">
+                            <!-- Case1 -->
+                            <div class="card reservation special connected-case1">
+                                <div class="card-content">
+                                    <div class="reservation-period">
+                                        <p class="distance">주행가능거리
+                                            <button class="btn-refresh">
+                                                <span class="blind">새로고침</span>
+                                            </button>
+                                        </p>
+                                        <p class="price-area">
+                                            <strong class="price is-family-secondary"> 300</strong>
+                                            km
+                                        </p>
+                                    </div>
+                                    <div class="buttons">
+                                        <button class="button is-small" disabled>쿠폰 받기</button>
+                                    </div>
+                                    <div class="mycoupon">
+                                        <a href="#" class="link-underline-txt size-s">발급 받은 쿠폰</a>
+                                        <span class="coupon-count"><strong claas="received">2</strong>/<strong class="receive">0</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Case2 -->
+                            <div class="card reservation special connected-case2">
+                                <span class="tooltip-dark">쿠폰받고 바로주유하러 가볼까요?</span>
+                                <div class="card-content">
+                                    <div class="reservation-period">
+                                        <p class="distance">주행가능거리
+                                            <button class="btn-refresh">
+                                                <span class="blind">새로고침</span>
+                                            </button>
+                                        </p>
+                                        <p class="price-area">
+                                            <strong class="price is-family-secondary"> 300</strong>
+                                            km
+                                        </p>
+                                    </div>
+                                    <div class="buttons">
+                                        <button class="button is-small is-black">쿠폰 받기</button>
+                                    </div>
+                                    <div class="mycoupon">
+                                        <a href="#" class="link-underline-txt size-s">발급 받은 쿠폰</a>
+                                        <span class="coupon-count"><strong claas="received">0</strong>/<strong class="receive">2</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Case3 -->
+                            <div class="card reservation special connected-case3">
+                                <span class="tooltip-dark">즉시 바로주유가 필요해요!</span>
+                                <div class="card-content">
+                                    <div class="reservation-period">
+                                        <p class="distance">주행가능거리
+                                            <button class="btn-refresh">
+                                                <span class="blind">새로고침</span>
+                                            </button>
+                                        </p>
+                                        <p class="price-area">
+                                            <strong class="price is-family-secondary"> 300</strong>
+                                            km
+                                        </p>
+                                    </div>
+                                    <div class="buttons">
+                                        <button class="button is-small is-black">쿠폰 받기</button>
+                                    </div>
+                                    <div class="mycoupon">
+                                        <a href="#" class="link-underline-txt size-s">발급 받은 쿠폰</a>
+                                        <span class="coupon-count"><strong claas="received">1</strong>/<strong class="receive">2</strong></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="noti-text">100km 미만 시 발급가능 (일 1회 / 월 최대 2회)</p>
+                        </div>
+                        
+                        <div class="station-list">
+                            <p class="list-tit">
+                                <strong>가까운 주유소</strong>
+                                <button class="btn-refresh">
+                                    <span class="blind">새로고침</span>
+                                </button>
+                            </p>
+                            <div class="inner">
+                                <p class="list-noti">방문할 주유소를 클릭하면, 네비게이션 앱으로 연결해드려요!</p>
+                            </div>
+                            <div class="list-wrap">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+
+                                        <div class="swiper-slide">
+                                            <div class="station-info">
+                                                <ul>
+                                                    <li class="type">휘발유</li>
+                                                    <li class="price"><em>2,023</em>원</li>
+                                                    <li class="name">GS타워주유소</li>
+                                                </ul>
+                                            </div>
+                                            <a href="#" class="station-distance">
+                                                1.25km
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="station-info">
+                                                <ul>
+                                                    <li class="type">휘발유</li>
+                                                    <li class="price"><em>2,023</em>원</li>
+                                                    <li class="name">GS타워주유소</li>
+                                                </ul>
+                                            </div>
+                                            <a href="#" class="station-distance">
+                                                1.25km
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="station-info">
+                                                <ul>
+                                                    <li class="type">휘발유</li>
+                                                    <li class="price"><em>2,023</em>원</li>
+                                                    <li class="name">GS타워주유소</li>
+                                                </ul>
+                                            </div>
+                                            <a href="#" class="station-distance">
+                                                1.25km
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <script>
+                                // 슬라이드 배너 Swiper
+                                var swiper = new Swiper(".list-wrap .swiper-container", {
+                                    slidesPerView: "auto",
+                                    centeredSlides: false,
+                                    spaceBetween: 12,
+                                    freeMode: true,
+                                });
+                            </script>
+                            <div class="inner">
+                                <p class="noti-text">가까운 주유소가 부정확하다면, <br>새로고침 아이콘을 클릭하여 위치접근을 허용해주세요.</p>
+                            </div>
+
+                            <div class="buttons">
+                                <button type="button" class="button  is-black button-baro">바로주유</button>
+                            </div>
+                        </div>
+
+                        <div class="is-button-fixed">
+                            <div class="inner">
+                                <!-- button -->
+                                <div class="buttons is-bottom-type">
+                                <button class="button is-half is-outline">연동 해제</button>
+                                <button class="button is-half is-dark">연장하기</button>
+                                <!-- <button class="button is-half is-dark" disabled>연장하기</button> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- // Contents -->
+        </div>
+
+        <!-- bottom sheet -->
+        @@include('./include/bottom-sheet-connected-car-guidance.html')
+    </div>
+
+    
+</body>
+
+</html>

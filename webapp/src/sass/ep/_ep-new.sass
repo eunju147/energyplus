@@ -673,6 +673,8 @@ i
 
 .card-wrap .icon.icon-card-discount, .card-info-box .icon.icon-card-discount
   background-image: url('/images/icon-card-discount.svg')
+.card-wrap .icon.icon-card-car, .card-info-box .icon.icon-card-car
+  background-image: url('/images/icon-card-car.svg')
 
 .card-wrap .creditcard-name, .card-info-box .creditcard-name
   font-family: 'Montserrat', 'NotoSansCJKkr', sans-serif
@@ -3151,3 +3153,383 @@ i.icon-npay-badge
 .list-rez-station > li .group-box-rez.is-disabled
   background-color: #f0f0f0
   pointer-events: none
+
+// 커넥티드카 연동 서비스
+.connected-mod.complete-wrap
+    .top-notice
+        position: relative
+        padding: 12px 12px 12px 43px
+        background-color: #f5f5f5
+        &::before
+            position: absolute
+            left: 24px
+            top: 14px
+            content: '!'
+            background: #da1e28
+            border-radius: 100%
+            width: 14px
+            height: 14px
+            text-align: center
+            line-height: 12px
+            color: #ffffff
+            font-size: 10px
+            font-weight: 100
+            letter-spacing: -.26px
+        a  
+            display: block
+            overflow: hidden
+            position: relative
+            p
+                white-space: nowrap
+                color: #da1e28
+                font-size: 12px
+                line-height: 18px
+                animation: flowing 12s linear infinite
+                transform: translateX(100%)
+                @-webkit-keyframes flowing
+                    100% 
+                        transform: translateX(-200%)
+                @keyframes flowing
+                    100% 
+                        transform: translateX(-200%)
+    .inner.is-padding-top
+        height: auto
+        margin-top: -70px
+        padding-bottom: 138px !important
+    .inner.top-bg-box
+        position: relative
+        .title-area
+            margin-top: 30px
+        .title
+            margin-bottom: 0
+            font-size: 20px
+            line-height: 32px
+    .connect-help
+        position: absolute
+        right: 0
+        width: 38px
+        height: 34px
+        background: url(#{$image-path}icon_connect_help.png) no-repeat
+        background-size: contain
+    .card-info-box li
+            margin-bottom: 8px
+    .tooltip-dark
+        position: absolute
+        z-index: 10
+        left: 20px
+        top: -10px
+        padding-left: 9px
+        padding-right: 12px
+        background-image: none
+        &::after
+            content: ''
+            position: absolute
+            left: 12px
+            bottom: -12px
+            border-left: 4px solid transparent
+            border-right: 4px solid transparent
+            border-top: 6px solid $ep-navy
+            border-bottom: 6px solid transparent
+    .noti-text
+        padding-left: 22px
+        font-size: 12px
+        line-height: 18px
+        color: #888
+        &::before
+            content: ''
+            display: inline-block
+            margin: 0 6px 0 -22px
+            width: 16px
+            height: 16px
+            vertical-align: -4px
+            background: url(#{$image-path}icon_noti.png)
+            background-size: contain
+    .card-area
+        margin-bottom: 34px
+        .noti-text
+            margin-top: -20px
+    .card .card-content
+        .distance
+            display: flex
+            font-size: 12px
+            .btn-refresh
+                margin-top: -2px
+                margin-left: 7px
+                &::before
+                    widht: 20px
+                    height: 20px
+        .reservation-period
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+            align-items: center
+            padding-bottom: 9px
+        .price-area,.price-area .price
+            font-size: 24px !important
+            line-height: 29px
+            height: auto
+            strong
+                margin-right: 5px
+        .emoji
+            position: absolute
+            right: 32px
+            top: 16px
+            width: 48px
+            height: 48px
+            display: inline-block
+            background-repeat: no-repeat
+            background-position: center
+            background-size: 48px 48px
+        .mycoupon
+            position: absolute
+            right: 24px
+            bottom: 21px
+            .coupon-count
+                display: block
+                color: $ep-dark-gray-3
+                font-size: 12px
+                font-family: $family-secondary
+                text-align: center
+                strong
+                    padding: 0 6px
+                    font-size: 15px
+                    font-weight: bold
+                .received
+                    color: $ep-navy
+                .receive
+                    color: $ep-dark-gray-3
+
+    .connected-case1.card.reservation
+        .emoji
+            background-image: url('/images/icon_emoji_happy.svg')
+    .connected-case2.card.reservation
+        .tooltip-dark
+            background-color : #f8891b
+            &::after
+                border-top: 6px solid #f8891b
+        .price-area, .price-area .price
+            color: #f8891b
+        .emoji
+            background-image: url('/images/icon_emoji_cold.svg')
+    .connected-case3.card.reservation
+        .tooltip-dark
+            background-color : $ep-red
+            &::after
+                border-top: 6px solid $ep-red
+        .price-area, .price-area .price
+            color: $ep-red
+        .emoji
+            background-image: url('/images/icon_emoji_fear.svg')
+    .station-list
+        margin: 0 -24px
+        .list-tit
+            display: flex
+            padding: 0 24px
+            margin-bottom: 9px
+            strong
+                margin-right: 4px
+                padding-left: 22px
+                font-size: 15px
+                color: $ep-navy
+                background-image: url('/images/icon_gas_gr.svg')
+                background-repeat: no-repeat
+            .btn-refresh::before
+                widht: 20px
+                height: 20px
+        .list-noti
+            font-size: 12px
+            line-height: 18px
+            font-weight: 500
+            color: $ep-green-2
+        .list-wrap
+            .swiper-container
+                padding: 16px 24px
+            .swiper-slide
+                position: relative
+                overflow: hidden
+                max-width: 42%
+                height: 124px
+                border-radius: 8px
+                box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.1);
+                background-color: #fff
+            .station-info
+                padding: 12px
+                .type
+                    font-size: 12px
+                    line-height: 16px
+                    color: $ep-navy
+                .price
+                    margin-bottom: 3px
+                    font-size: 15px
+                    line-height: 24px
+                    color: $ep-green-2
+                    em
+                        font-size: 20px
+                        font-family: $family-secondary
+                        font-weight: 700
+                .name
+                    font-size: 12px
+                    line-height: 18px
+                    color: $ep-navy
+            .station-distance
+                display: block
+                padding: 10px 8px 10px 40px
+                background-color: $ep-green-3
+                font-size: 12px
+                line-height: 18px
+                color: #fff
+                background: $ep-green-3 url('/images/icon-direction-charge.png') 18px center no-repeat
+                background-size: 13.5px auto
+            .nostation-container
+                padding: 16px 24px
+            .nostation-content
+                display: flex
+                align-items: center
+                justify-content: center
+                width: 100%
+                height: 124px
+                border: 1px solid #e5e5e5
+                border-radius: 8px
+                .txt
+                    padding-top: 50px
+                    font-size: 12px
+                    line-height: 18px
+                    font-weight: 500
+                    color: $ep-nero
+                    text-align: center
+                    background: url('/images/icon_station_map.png') no-repeat top center
+                    background-size: 48px 48px
+        .buttons
+            margin-top: 20px
+            padding: 0 24px
+            .button-baro
+                text-indent: -99999px
+                font-size: 0
+                width: 100%
+                background-image: url('/images/main-baro-logo.svg')
+                background-repeat: no-repeat
+                background-size: 86px
+                background-position: center
+
+.connected-mod-modal
+    margin-bottom: 17px
+    .selection-title
+        font-size: 24px
+        line-height: 32px
+        margin-bottom: 18px
+        color: $ep-black
+        strong
+            font-weight: 700
+    .notification-txt
+        margin-bottom: 8px
+        color: $ep-black
+        font-size: 15px
+        line-height: 16px
+        text-align: center
+        // &+.notification-txt
+        //     margin-top: 8px
+        .num
+            font-size: 20px
+            line-height: 32px
+            font-family: $family-secondary
+            strong
+                font-weight: 700
+                margin-right: 2px
+                color: $ep-black
+                em
+                    font-style: normal
+                    font-weight: 500
+        .emphasize
+            position: relative
+            .num
+                position: relative
+                z-index: 1
+                color: $ep-green-3
+                strong
+                    color: $ep-green-3
+                em
+                    font-family: $family-sans-serif
+                    // filter: blur(10px)
+            .txt
+                position: relative
+                z-index: 1
+            &::after
+                content: ''
+                display: block
+                position: absolute
+                left: -5px
+                right: -4px
+                bottom: 2px
+                height: 6px
+                background-color: #aaffd2
+    .guidance-map
+        .maplist
+            display: flex
+            justify-content: space-between
+            margin-bottom: 20px
+            .map-icon
+                input
+                    position: absolute
+                    visibility: hidden
+                    cursor: pointer
+                    &:checked + i::after
+                        content: ''
+                        position: absolute
+                        top: 4px
+                        left: 7px
+                        right: 7px
+                        bottom: 9px
+                        border: 3px solid $ep-green-3
+                        border-radius: 50%
+                i
+                    position: relative
+                    overflow: hidden
+                    display: block
+                    width: 64px
+                    height: 64px
+                    background-size: contain
+                    text-indent: -999px
+                &.tmap i
+                    background-image: url(/images/icon_tmap.png)
+                &.kakao i
+                    background-image: url(/images/icon_kakaomap.png)
+                &.naver i
+                    background-image: url(/images/icon_navermap.png)
+                &.apple i
+                    background-image: url(/images/icon_applemap.png)
+                &.one i
+                    background-image: url(/images/icon_onemap.png)
+
+.connected-guide-modal
+    &.bottom-sheet-body
+        padding : 0
+        .inner .connected-guide
+            margin : -24px
+            padding-top : 0      
+.connected-guide
+  padding-top : 43px
+  .guide-section
+    padding : 0 23px 30px
+  .guide-title
+    margin : 30px 0 28px
+    text-align : center
+    img 
+      height : 28px
+  .guide-text
+    margin-left : 8px
+    text-indent : -7px
+    font-size : 12px
+    strong
+        font-weight : 700
+    .imgbox
+      margin : 10px 0 30px
+      img
+        display : block
+      & +.imgbox
+        margin-top : -17px 
+    &:not(:last-child)
+      &::after
+        content : ''
+        display : block
+        border-bottom : 1px dashed #aeaeae
+        opacity : 0.5        
