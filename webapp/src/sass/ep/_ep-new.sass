@@ -3532,4 +3532,141 @@ i.icon-npay-badge
         content : ''
         display : block
         border-bottom : 1px dashed #aeaeae
-        opacity : 0.5        
+        opacity : 0.5
+
+// 상품권 안내
+.swichtab-area
+  position: relative
+  border-radius: 26px
+  background-color: $ep-green-3
+  border: 2px solid $ep-green-3
+  .swichtab
+    display: flex
+    position: relative
+    z-index: 1
+    .tab-item
+      flex: 1
+      text-align: center
+      a
+        display: flex
+        align-items: center
+        justify-content: center
+        height: 48px
+        font-size: 15px
+        color: $ep-white
+        transition: color 200ms
+      &.is-active a
+        color: $ep-green-3
+  .swich
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    height: 100%
+    background-color: $ep-white
+    border-radius: 24px
+    z-index: 0
+    transition: left 300ms ease-in-out
+    &.type-2
+      width: 50%
+    &.type-3
+      width: 33.33%
+    &.type-4
+      width: 25%
+  
+
+.voucher-wrap
+  .top-info
+    padding-top: 12px
+    padding-bottom: 30px
+    .tit
+      font-size: 20px
+      margin-bottom: 8px
+      .link-underline-txt
+        float: right
+        margin-top: 6px
+    .type
+      float: left
+      padding-right: 4px
+    .cont
+      overflow: hidden
+  .use-voucher
+    padding-top: 32px
+    .list-tit
+      margin-bottom: 12px
+      font-size: 20px
+    .list-wrap
+      display: flex
+      flex-wrap: wrap
+      margin-left: -8px
+      margin-bottom: 20px
+      & >li
+        flex: 1 0 50%
+        padding-left: 8px
+        margin-bottom: 13px
+      .logoimg
+        display: flex
+        align-items: center
+        height: 100px
+        margin-bottom: 4px
+        border-radius: 8px
+        border: 1px solid $ep-whisper
+      .name
+        font-size: 12px
+        color: $ep-gray
+        text-align: center
+
+  .sales-voucher-tab
+    margin-bottom: 18px
+
+  .sales-voucher
+    .station-notice
+      padding-top: 2px
+      margin-bottom: 19px
+    .office-notice
+      margin-bottom: 19px
+      .time-info
+        display: flex
+      .time
+        padding: 0 4px
+        & >i
+          display: block
+          font-style: normal
+      .breaktime
+        display: flex
+        align-items: flex-end
+    .list-tit
+      font-size: 20px
+      margin-bottom: 8px
+    .list-sub-tit
+      margin-bottom: 20px
+      font-size: 15px
+    .list-wrap
+      margin-bottom: 20px
+      font-size: 13px
+      .list-table
+        width: 100%
+        thead th
+          height: 46px
+          background-color: $ep-white-smoke
+          text-align: center
+          vertical-align: middle
+          font-weight: 500
+          border-bottom: 1px solid $ep-nero
+          & + th
+            border-left: 1px solid $ep-whisper
+        tbody td
+          padding: 10px
+          border-bottom: 1px solid $ep-whisper
+          vertical-align: middle
+          & + td
+            border-left: 1px solid $ep-whisper
+            .map
+              display: inline-block
+              font-size: 13px
+              line-height: 22px
+              color: $ep-secondary-1
+              text-decoration: underline
+          &.phone
+              font-family: $family-secondary
+        

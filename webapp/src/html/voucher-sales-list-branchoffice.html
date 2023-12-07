@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  @@include('./include/head.html')
+  <body>
+    @@include('./include/skip_navi.html')
+    <div id="wrap" role="main">
+      <!-- Header -->
+      <header id="header">
+        <div class="inner">
+          <a href="#" class="is-back">
+            <i class="icon-arrow-left"></i>
+            <span class="blind">이전</span>
+          </a>
+          <div class="has-text-centered">
+            <h2 class="title is-3">상품권 안내</h2>
+          </div>
+        </div>
+      </header>
+      <!-- // Header -->
+
+      <div id="container">
+        <div id="contents" class="container voucher-wrap">
+          <div class="inner">
+            <div class="top-info">
+              <h3 class="tit">
+                상품권 안내
+                <a href="#" class="link-underline-txt size-s">표준약관</a><br>
+              </h3>
+              <ul>
+                <li><span class="type">- 권종 :</span>
+                  <p class="cont">1만원권 / 5만원권 / 10만원권</p>
+                </li>
+                <li>
+                  <span class="type">- 결제방법 :</span>
+                  <ul class="cont">
+                    <li>- 주유소 : 현금결제만 가능</li>
+                    <li>- 자사/기타 : 회사명의 계좌 입금</li>
+                  </ul>
+                </li>
+                <li><span class="type">- 판매처 :</span>
+                  <ul class="cont">
+                    <li>- 자사/기타 전국 13개</li>
+                    <li>- GS칼텍스 주유소(약 300개)</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="tab-area b-tabs is-sticky">
+            <nav class="tabs">
+              <ul>
+                <li>
+                  <a href="#">
+                    <span>사용처</span>
+                  </a>
+                </li>
+                <li class="is-active">
+                  <a href="#">
+                    <span>판매처</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+
+          <!-- 판매처 -->
+          <section class="tab-content">
+            <div class="inner">
+              <div class="sales-voucher-tab">
+                <div class="swichtab-area">
+                  <ul class="swichtab">
+                    <li class="tab-item"><a href="#">주유소</a></label></li>
+                    <li class="tab-item is-active"><a href="#">지사/기타</a></label></li>
+                  </ul>
+                  <div class="swich type-2" style="left:50%;"></div>
+                </div>
+              </div>
+              <script>
+                const switchTab = document.querySelector('.swichtab-area');
+                const switchTabItems = switchTab.querySelectorAll('.tab-item');
+                const switchTabItemActive = switchTab.querySelector('.tab-item.is-active');
+                const switchTabBar = switchTab.querySelector('.swich');
+
+                for(let i =0; i < switchTabItems.length; i++){
+                  switchTabItems[i].addEventListener('click',function(){
+                      for(let j =0; j < switchTabItems.length; j++){
+                        switchTabItems[j].classList.remove('is-active');
+                      }
+                      switchTabItems[i].classList.add('is-active');
+                      const left = (i/switchTabItems.length) * 100;
+                      switchTabBar.style.left = left + '%';
+                  });
+                }
+              </script>
+
+              <!-- 지사/기타 -->
+              <div class="sales-voucher">
+                <div class="office-notice">
+                  <h3 class="list-tit">상품권 판매처 운영시간</h3>
+                  <p class="time-info">
+                    <em class="weekday">- 평일</em>
+                    <span class="time"><i>09:30 ~ 17:00</i><i>12:00 ~ 13:30</i></span>
+                    <em class="breaktime">휴게시간</em>
+                  </p>
+                </div>
+
+                <h3 class="list-tit">자사/기타 위치 안내</h3>
+                <h4 class="list-sub-tit">- 수도권</h4>
+                <div class="list-wrap">
+                  <table class="list-table" summary="판매처, 주소, 연락처 테이블">
+                    <caption>수도권</caption>
+                    <colgroup>
+                      <col style="width:22%;" />
+                      <col />
+                      <col style="width:22%;" />
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th scope="col">판매처</th>
+                        <th scope="col">주소</th>
+                        <th scope="col">연락처</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="office">서울남부지사</td>
+                        <td class="address">서울특별시 강동구 천호옛길 88 지라이트빌딩 8층(천호역 6번출구,도보200m) <a href="#" class="map">지도</a></td>
+                        <td class="phone"><a href="tel:02-541-9577">02-541-9577</a></td>
+                      </tr>
+                      <tr>
+                        <td class="office">서울북부지사</td>
+                        <td class="address">서울특별시 영등포구 여의대로 24 전국경제인연합회관 9층 <a href="#" class="map">지도</a></td>
+                        <td class="phone"><a href="tel:02-3406-0550">02-3406-0550</a></td>
+                      </tr>
+                      <tr>
+                        <td class="office">경기지사</td>
+                        <td class="address">경기도 수원시 영통구 창룡대로 260 광교센트럴비즈타워 6층 622호 <a href="#" class="map">지도</a></td>
+                        <td class="phone"><a href="tel:031-222-5145">031-222-5145</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <h4 class="list-sub-tit">- 영남권</h4>
+                <div class="list-wrap">
+                  <table class="list-table" summary="판매처, 주소, 연락처 테이블">
+                    <caption>영남권</caption>
+                    <colgroup>
+                      <col style="width:22%;" />
+                      <col />
+                      <col style="width:22%;" />
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th scope="col">판매처</th>
+                        <th scope="col">주소</th>
+                        <th scope="col">연락처</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="office">대구지사</td>
+                        <td class="address">대구광역시 동구 혁신대로 104 대구혁신도시주유소 2층	<a href="#" class="map">지도</a></td>
+                        <td class="phone"><a href="tel:053-961-5122">053-961-5122</a></td>
+                      </tr>
+                      <tr>
+                        <td class="office">부산지사</td>
+                        <td class="address">부산광역시 해운대구 센텀중앙로 78 센텀그린타워 2층 <a href="#" class="map">지도</a></td>
+                        <td class="phone"><a href="tel:051-607-7281">051-607-7281</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                
+                <h4 class="list-sub-tit">- 호남/충청권</h4>
+                <div class="list-wrap">
+                  <table class="list-table" summary="판매처, 주소, 연락처 테이블">
+                    <caption>호남/충청권</caption>
+                    <colgroup>
+                      <col style="width:22%;" />
+                      <col />
+                      <col style="width:22%;" />
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th scope="col">판매처</th>
+                        <th scope="col">주소</th>
+                        <th scope="col">연락처</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="office">대전/충북지사</td>
+                        <td class="address">대전광역시 서구 대덕대로 247 아모레퍼시픽 빌딩 9층 <a href="#" class="map">지도</a></td>
+                        <td class="phone"><a href="tel:042-866-1579">042-866-1579</a></td>
+                      </tr>
+                      <tr>
+                        <td class="office">충남지사</td>
+                        <td class="address">충청남도 천안시 서북구 쌍용대로 234 신동해빌딩 10층 <a href="#" class="map">지도</a></td>
+                        <td class="phone"><a href="tel:041-561-5154">041-561-5154</a></td>
+                      </tr>
+                      <tr>
+                        <td class="office">전북지사</td>
+                        <td class="address">전라북도 전주시 완산구 온고을로1 한국교직원공제회 전북회관 3층 <a href="#" class="map">지도</a></td>
+                        <td class="phone"><a href="tel:063-270-0604">063-270-0604</a></td>
+                      </tr>
+                      <tr>
+                        <td class="office">광주/전남지사</td>
+                        <td class="address">광주광역시 서구 시청로 81 대아빌딩 303호 <a href="#" class="map">지도</a></td>
+                        <td class="phone"><a href="tel:062-381-9021">062-381-9021</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <h4 class="list-sub-tit">- 기타</h4>
+                <div class="list-wrap">
+                  <table class="list-table" summary="판매처, 주소, 연락처 테이블">
+                    <caption>기타</caption>
+                    <colgroup>
+                      <col style="width:22%;" />
+                      <col />
+                      <col style="width:22%;" />
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th scope="col">판매처</th>
+                        <th scope="col">주소</th>
+                        <th scope="col">연락처</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="office">강원지사</td>
+                        <td class="address">강원도 원주시 능라동길 61, 정한타워 4층 401호 <a href="#" class="map">지도</a></td>
+                        <td class="phone"><a href="tel:033-760-4302">033-760-4302</a></td>
+                      </tr>
+                      <tr>
+                        <td class="office">삼남석유</td>
+                        <td class="address">제주특별자치도 제주시 남성로 60 <a href="#" class="map">지도</a></td>
+                        <td class="phone"><a href="tel:064-753-5151">064-753-5151</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="box-bottom-noti box-bottom-type">
+                  <p class="title is-5 title-noti">안내사항</p>
+                  <ul class="list-noti-area">
+                    <li class="item-txt-noti">- 2022년 1월 1일부로 전남지사가 광주/전남지사로 통합되어 운영됩니다.</li>
+                    <li class="item-txt-noti">- <span class="red">경남지사 판매중단 (2023.01.01일부)으로 이용이 불가</span>하오니 이점 양해 부탁드립니다. </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- // Contents -->
+      </div>
+
+      <!-- Footer -->
+      @@include('./include/footer.html')
+      <!-- // Footer -->
+    </div>
+  </body>
+</html>
