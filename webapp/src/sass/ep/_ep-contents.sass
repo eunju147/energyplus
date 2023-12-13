@@ -3941,6 +3941,11 @@ label
 	.btn-trash
 		background : 
 			image : url(#{$image-path}icon-trash-white.svg)
+	&.edition3
+		background-color : #3ddb87
+		.use-credit-card-btn
+			background : url(#{$image-path}use-credit-card_active2.svg) no-repeat center
+			background-size : contain
 
 .discount-card-plus
   &.type02
@@ -3962,6 +3967,61 @@ label
   .energyplus-logo
     strong
       font-weight : 400
+  
+  &.edition3
+    flex-direction : column
+    padding : 0 16px
+    height : auto
+    min-height : inherit !important
+    background-color : $ep-green-3
+    box-shadow : 0 4px 12px 0 rgba(0, 0, 0, 0.12)
+    border-radius : 8px
+    margin-bottom : 20px
+    .discount-card-content
+      display : flex
+      width : 100%
+      padding : 16px 0
+      & + .discount-card-content
+        border-top : 1px solid rgba(255, 255, 255, 0.2)
+      .energyplus-logo
+        flex : 1
+        padding-left : 50px
+        background : url(#{$image-path}use-credit-card_active2.svg) no-repeat left center
+        background-size : 40px auto
+        color : #fff
+        font-size : 12px
+        line-height : 20px
+        strong
+          font-size : 15px
+          color : #fff
+      .btn-arrow-rig
+        flex : 0 1 20px
+        background : url(#{$image-path}arrow_right.png) no-repeat center
+        background-size : 7px 12.5px
+    .discount-pgrph
+      padding : 0
+      color : #fff
+      font-size : 12px
+      line-height : 18px
+      span, strong
+        color : #18355e
+        i
+          font-style : normal
+          font-weight : bold
+          font-family : $family-secondary
+    &.bottom-ad
+      margin : 0 24px 48px
+      .energyplus-logo
+        font-size : 15px
+        font-weight : normal
+        span
+          font-weight : 500
+          em
+            color : #18355e
+          strong
+            color : #18355e
+            font-weight : bold
+            font-family : $family-secondary
 
   // 2021.11.05 간편로그인 화면 추가 및 탭메뉴 추가
 .select-login-2way

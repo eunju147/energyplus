@@ -42,8 +42,8 @@
 
         <div id="container" class="baro-management-wrap" >
             <div id="contents" class="container type-2 paycard-wrap">
-                <div class="inner is-padding-top">
-                  <div v-if="isShowHd" class="discount-card discount-card-plus type02">
+              <div class="inner is-padding-top">
+                <!-- <div v-if="isShowHd" class="discount-card discount-card-plus type02">
                     <div class="discount-card-content">
                       <p class="energyplus-logo">
                         <strong>최대 15% 할인카드로 <br /><span class="text-indent">바로주유 등록하기</span></strong>
@@ -58,7 +58,26 @@
                         등록하고<span> 최대 15% 할인 혜택 받으세요</span>
                       </p>
                     </div>
+                  </div> -->
+                  <!-- 20231212 카드에디션3 -->
+                  <div class="discount-card-plus edition3">
+                    <div class="discount-card-content">
+                      <p class="energyplus-logo">
+                        <strong>주유에 일상을 플러스</strong><br>
+                        에너지플러스카드 Edition3!
+                      </p>
+                      <a class="btn-arrow-rig">
+                        <span class="blind">바로가기</span>
+                      </a>
+                    </div>
+                    <div class="discount-card-content">
+                      <p class="discount-pgrph">
+                        에너지플러스카드로 리터당 최대 <span><i>300M</i>포인트 적립,</span> <br>
+                        어디서든 <strong><i>1% M</i>포인트 적립한도 없이</strong> 적립 받기
+                      </p>
+                    </div>
                   </div>
+                  <!-- //20231212 카드에디션3 -->
                   <div class="box-credit-card auto-regist">
                     <p>e+카드를 발급받으셨네요!<br />결제카드 자동등록하세요.</p>
                     <a class="btn-regist">
@@ -88,6 +107,26 @@
                   <!-- // No Data -->
 
                 <ul class="list-credit-card">
+                    <!-- 20231212 카드에디션3 -->
+                    <li>
+                      <div class="box-credit-card use-credit-card edition3 is-delete">
+                        <div>
+                          <h4 class="title is-5">
+                            현대카드 <span>(2025)</span>
+                          </h4>
+                            <div class="sub-desc">
+                              <span>사용기간</span>
+                              <span class="is-family-secondary">~ 2024-12-31</span>
+                            </div>
+                          
+                          <div class="use-credit-card-btn"><span class="blind"></span></div>
+                        </div>
+                        <button class="btn-trash">
+                          <span class="blind">삭제</span>
+                        </button>
+                      </div>
+                    </li>  
+                    <!-- //20231212 카드에디션3 -->
                     <li>
                         <!-- 활성화 is-active 클래스 추가 비활성화 is-disabled 클래스 추가 is-delete-->
                         <div class="box-credit-card is-active">
@@ -136,7 +175,7 @@
                             
                             <div class="use-credit-card-btn"><span class="blind"></span></div>
                           </div>
-                          <button class="btn-trash"">
+                          <button class="btn-trash">
                             <span class="blind">삭제</span>
                           </button>
                         </div>
