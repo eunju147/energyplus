@@ -3888,7 +3888,7 @@ label
 			background-size : 7px 12.5px
 
 .auto-regist
-	height : 64px
+	min-height : 64px
 	padding-left : 56px
 	.btn-regist
 		display : flex
@@ -3902,6 +3902,7 @@ label
 		letter-spacing : normal
 		text-align : left
 		color : #222
+		padding-right : 70px
 	&::before
 		content : ''
 		position : absolute
@@ -3909,7 +3910,23 @@ label
 		height : 46px
 		left : 16px
 		top : 9px
-		background-image : url(#{$image-path}auto-regist_before.svg) 
+		background-image : url(#{$image-path}auto-regist_before.svg)
+	.new
+		overflow : hidden
+		position : absolute
+		top : -2px
+		left : -4px
+		width : 43px
+		height : 32px
+		background : url(#{$image-path}card_edition_new.png) center no-repeat
+		background-size : 100%
+		font-size : 0
+		text-indent : -999px
+	&.edition3
+		&::before
+			background : url(#{$image-path}card_edition3.png) center no-repeat
+			background-size : contain
+
 .use-credit-card
 	&.is-active
 		border-color : #3cdc87
@@ -4416,7 +4433,12 @@ label
       .discount-pgrph
         font-size : 13px 
         br
-          display : none  
+          display : none
+	.auto-regist
+		&::before
+			top : 19px
+		.new
+			top : 8px
 // sass compile 오류로 임시로 스타일분리
 .gnb-quick-icon 
   display : flex
