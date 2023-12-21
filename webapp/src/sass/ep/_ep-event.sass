@@ -5268,3 +5268,49 @@
             height: 64px
             &.phone-number::before
                 margin-right: 4px
+
+.event-container
+    max-width : 750px
+    position : relative
+    img
+        line-height : 0
+        display : block
+    .event-button-fixed
+        position : fixed
+        bottom : 12px
+        margin : 0 6%
+        .event-button
+            display : block
+
+    &.edition3
+        .bottom
+            padding : 45px 25px 100px
+            background : #f1f1f1
+            .title
+                margin-bottom : 20px
+                img
+                    max-width : 162.5px
+            .notice
+                >li
+                    padding-left : 15px
+                    margin-bottom : 7.5px
+                    font-size : 1rem
+                    &::before
+                        content : '·'
+                        display : inline-block
+                        text-align : center
+                        margin-left : -15px
+                &.depth2
+                    li::before
+                        content : '-'
+                .bold
+                    font-weight : 900
+
+@media (min-width: 750px)
+    .event-container.edition3 .bottom .notice > li
+        font-size : 1.5rem
+        margin-bottom : 15px
+    .event-container.edition3 .bottom .title
+        margin-bottom : 40px
+    .event-container.edition3 .bottom .title img
+        max-width : 280px
