@@ -4018,6 +4018,7 @@ label
             font-family : $family-secondary
             font-weight : bold
         .text-indent
+          display : inline-block
           font-weight : 500
 
       .btn-arrow-rig
@@ -4029,12 +4030,15 @@ label
       color : #fff
       font-size : 12px
       line-height : 18px
+      word-break : keep-all
       span, strong
         color : #18355e
         i
           font-style : normal
           font-weight : bold
           font-family : $family-secondary
+      .fold-br
+          display : none
 
   // 2021.11.05 간편로그인 화면 추가 및 탭메뉴 추가
 .select-login-2way
@@ -4442,6 +4446,11 @@ label
 			top : 19px
 		.new
 			top : 8px
+
+	.discount-card-plus.edition3 .discount-pgrph
+		.fold-br
+			display : block
+
 // sass compile 오류로 임시로 스타일분리
 .gnb-quick-icon 
   display : flex
