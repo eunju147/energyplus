@@ -12,3 +12,6 @@ package-lock.json
 
 # vsdode setting
 .vscode
+
+#macOS
+.DS_Store
