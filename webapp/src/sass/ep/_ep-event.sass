@@ -5278,11 +5278,10 @@
     .event-button-fixed
         position : fixed
         bottom : 12px
-        margin : 0 6%
         .event-button
             display : block
 
-    &.edition3
+    &.edition3, &.edition3-promotion
         .bottom
             padding : 45px 25px 100px
             background : #f1f1f1
@@ -5305,12 +5304,95 @@
                         content : '-'
                 .bold
                     font-weight : 900
+        .event-button-fixed
+            margin : 0 6%
+            max-width : calc(750px - 12%)
+    &.edition3-promotion
+        .body
+            .event-accordion
+                .accordion-title
+                    position : relative
+                    display : block
+                    margin : 0
+                    padding : 21.5px 30px 0
+                    background-color : #24ce7b
+                    height : 60px
+                    img
+                        height : 21.5px
+                    &:first-child img
+                        height : 17px
+                    &::after
+                        content : ''
+                        position : absolute
+                        top : 18.5px
+                        right : 30px
+                        width : 23px
+                        height : 23px
+                        background : url(#{$image-path}event_cardedition3_promotion_body_title_arrow.png) no-repeat
+                        background-size : contain
+                        transform : rotateZ(0)
+                        transition : transform 0.3s ease-out
+                    &.active::after
+                        transform : rotateZ(180deg)
+
+                .panel
+                    margin : 0
+                    background-color : #fffee2
+                    max-height : 0
+                    overflow : hidden
+                    transition : max-height 0.3s ease-in-out
+                .content
+                    margin : 0
+                    padding : 20px 30px 30px
+                    .txt
+                        margin : 0
+                        font-size : 12.5px
+                        color : #0f1f2e
+                        word-break : keep-all
+                    .subtxt
+                        margin : 5px 0 0
+                        font-size : 12.5px
+                        color : #777
+                        word-break : keep-all
+                    
+
+@media (max-width: 280px)
+    .event-container.edition3 .bottom .notice > li,
+    .event-container.edition3-promotion .notice > li
+        font-size : 14px
+    .event-container.edition3-promotion .body .event-accordion .accordion-title
+        img
+            transform : scale(0.9)
+            transform-origin : 0 50%
+        &::after
+            transform : scale(0.8)
+            transform-origin : 100% 50%
 
 @media (min-width: 750px)
-    .event-container.edition3 .bottom .notice > li
-        font-size : 1.5rem
-        margin-bottom : 15px
-    .event-container.edition3 .bottom .title
-        margin-bottom : 40px
-    .event-container.edition3 .bottom .title img
-        max-width : 280px
+    .event-container.edition3-promotion .body .event-accordion
+        .accordion-title
+            padding : 43px 60px 0
+            height : 120px
+            &::after
+                width : 46px
+                height : 46px
+                top : 37px
+                right : 60px
+            img
+                height : 43px
+            &:first-child img
+                height : 34px
+        .content
+            padding : 40px 60px 60px
+            .txt, .subtxt
+                font-size : 25px
+    
+    .event-container.edition3 .bottom,
+    .event-container.edition3-promotion .bottom
+        .notice > li
+            font-size : 1.5rem
+            margin-bottom : 15px
+        .title
+            margin-bottom : 40px
+            img
+                max-width : 280px
