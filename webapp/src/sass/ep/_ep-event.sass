@@ -5308,6 +5308,14 @@
             margin : 0 6%
             max-width : calc(750px - 12%)
     &.edition3-promotion
+        .head
+            .modal-open
+                position: absolute
+                top: inherit
+                z-index: 1
+                left: 7%
+                width: 56%
+                transform: translateY(-240%)
         .body
             .event-accordion
                 .accordion-title
@@ -5355,6 +5363,44 @@
                         color : #777
                         word-break : keep-all
                     
+.edition3-promotion-modal
+    font-size : 15px
+    word-break : normal
+    .title
+        font-size : 15px
+        font-weight : bold
+        & +.list-tit
+            margin-top : 16px
+    .list-tit
+        margin : 24px 0 4px
+        color : #2dd482
+        font-weight : bold
+        &.sub
+            color : #222
+            margin : 16px 0 4px
+        &.type2
+            color : #4581d5
+
+    .list-dot
+        padding : 0 6px
+        & >li
+            color : #222
+            &::before
+                content : '·'
+                display : inline-block
+                width : 9px
+                margin-left : -9px
+            & +li
+                margin-top : 8px
+                
+    .list-dash
+        padding-left : 9px
+        & >li
+            text-indent : -9px
+            color : #888
+            & +li
+                margin-top : 4px
+
 
 @media (max-width: 280px)
     .event-container.edition3 .bottom .notice > li,
