@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+@@include('./include/head.html')
+
+<body>
+  @@include('./include/skip_navi.html')
+
+  <div id="container">
+    <!-- Contents -->
+    <div class="container event-container naegok-promotion">
+
+        <section class="head">
+            <img src="./images/event_naegok_lanking_top.png" alt="">
+        </section>
+        <section class="body">
+            <img src="./images/event_naegok_lanking_body.png" alt="랭킹별 주유쿠폰 금액 안내">
+            <!-- 이벤트 랭킹리스트 -->
+            <div class="event-lanking">
+                <img src="./images/event_naegok_lanking_background.png" alt="주유왕 랭킹 TOP30">
+                <div class="mylangking"><p class="text"><i class="num">16</i><span class="txt">위</span><span class="name">붕어빵은팥</span></p></div>
+                <div class="lanking-list">
+                    <ul>
+                        <li><p class="text"><i class="num">1</i><span class="name">주유왕일등</span></p></li>
+                        <li><p class="text"><i class="num">2</i><span class="name">주유왕이등</span></p></li>
+                        <li class="badge-joint"><p class="text"><i class="num">3</i><span class="name">공동삼등</span></p></li>
+                        <li><p class="text"><i class="num">4</i><span class="name">주유왕사등</span></p></li>
+                        <li><p class="text"><i class="num">5</i><span class="name">주유왕오등</span></p></li>
+                        <li><p class="text"><i class="num">6</i><span class="name">주유왕육등</span></p></li>
+                        <li><p class="text"><i class="num">7</i><span class="name">주유왕칠등</span></p></li>
+                        <li><p class="text"><i class="num">8</i><span class="name">주유왕팔등</span></p></li>
+                        <li><p class="text"><i class="num">9</i><span class="name">주유왕구등</span></p></li>
+                        <li><p class="text"><i class="num">10</i><span class="name">주유십등</span></p></li>
+                        <li><p class="text"><i class="num">11</i><span class="name">십일등</span></p></li>
+                        <li class="badge-joint"><p class="text"><i class="num">12</i><span class="name">공동십이등</span></p></li>
+                        <li class="badge-joint"><p class="text"><i class="num">13</i><span class="name">공동십삼등</span></p></li>
+                        <li><p class="text"><i class="num">14</i><span class="name">내가십사등</span></p></li>
+                        <li><p class="text"><i class="num">15</i><span class="name">나는15등</span></p></li>
+                    </ul>
+                </div>
+            </div>  
+        </section>
+        <section class="bottom">
+            <img src="./images/event_naegok_lanking_notice.png" alt="이벤트 안내사항">
+            <div class="event-button">
+                <a href="#"><img src="./images/event_naegok_lanking_notice_btn.png" alt="바로주유 등록하기"></a>
+            </div>
+        </section>
+
+    </div>
+    <!-- // Contents -->
+  </div>
+
+  <!-- <script src="https://code.jquery.com/jquery-3.6.4.js"></script> -->
+  <script>
+  
+    // input 'X' 버튼 클릭 시 초기화 이벤트
+    function clearInput(e) {
+      e.parentNode.querySelector(".nickname").value = '';
+    }
+  </script>
+</body>
+
+</html>

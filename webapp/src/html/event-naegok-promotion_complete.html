@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+@@include('./include/head.html')
+
+<body>
+  @@include('./include/skip_navi.html')
+
+  <div id="container">
+    <!-- Contents -->
+    <div class="container event-container naegok-promotion">
+
+        <section class="head">
+            <img src="./images/event_naegok_lanking_top.png" alt="">
+        </section>
+        <section class="body">
+            <img src="./images/event_naegok_lanking_body.png" alt="랭킹별 주유쿠폰 금액 안내">
+            <div class="event-form">
+                <!-- 이벤트 참여 후 -->
+                <div class="event-completed">
+                    <img src="./images/event_naegok_lanking_complete.png" alt="이벤트 참여가 완료 되었습니다.">
+                </div>
+            </div>
+        </section>
+        <section class="bottom">
+            <img src="./images/event_naegok_lanking_notice.png" alt="이벤트 안내사항">
+            <div class="event-button">
+                <a href="#"><img src="./images/event_naegok_lanking_notice_btn.png" alt="바로주유 등록하기"></a>
+            </div>
+        </section>
+
+    </div>
+    <!-- // Contents -->
+  </div>
+
+  <!-- <script src="https://code.jquery.com/jquery-3.6.4.js"></script> -->
+  <script>
+  
+    // input 'X' 버튼 클릭 시 초기화 이벤트
+    function clearInput(e) {
+      e.parentNode.querySelector(".nickname").value = '';
+    }
+  </script>
+</body>
+
+</html>
