@@ -5578,15 +5578,30 @@
                     font-weight : 500
                     margin-right : 5px
                 .txt
-                    flex : 1 0 25%
+                    flex : 1 0 38%
                     font-size : 29px
                 .name
                     flex : 1 0 50%
                     font-size : 34px
                     font-weight : 500
                     color : #fbc81e
-                    text-align : center
-                    transform : translateY(-0.15em)
+                    text-align : left
+                    transform : translateY(-1em)
+                    .liter
+                        display : block
+                        color : #fff
+                        font-style : normal 
+                        font-size : 26px
+                        font-weight : 300
+                        font-family : $family-primary
+                        &::after
+                            content : ''
+                            width : 0.5em
+                            height : 1em
+                            display : inline-block 
+                            background : url(#{$image-path}event_naegok_lanking_liter_icon.png) no-repeat right bottom
+                            background-size : 95%
+                            vertical-align : -0.1em
             &.nocount
                 right : 23%
                 .num, .txt
@@ -5595,6 +5610,7 @@
                     font-size : 38px
                     color : #828182
                     transform : none
+                    text-align : center
             
         .lanking-list
             margin-top : -390px
@@ -5606,13 +5622,14 @@
                 li
                     width : 47.457627118644068%
                     padding-top : 18%
+                    padding-top : 24%
                     color : #fff
-                    background : url(#{$image-path}event_naegok_lanking_namespace.png) no-repeat center
-                    background-size : contain
+                    background : url(#{$image-path}event_naegok_lanking_namespace.png) no-repeat top center
+                    background-size : cover
                     position : relative
                     .text
                         position : absolute
-                        top : 16%
+                        top : 25%
                         left : 12%
                         right : 0
                         font-size : 26px
@@ -5624,19 +5641,35 @@
                             font-family : $family-secondary
                             font-weight : 500
                             text-align : center
+                            color : #f3c11e
                         .name
                             display : inline-block
                             margin-left : 15%
                             height : 1.5em
-                    &:first-child
-                        .text .num
-                            color : #f3c11e
-                        .text .name
                             color : #fbc81e
+                            font-weight : bold
+                            transform : translateY(-0.6em)
+                            min-width : 65%
+                            .liter
+                                display : block
+                                color : #fff
+                                font-style : normal 
+                                font-size : 24px
+                                font-weight : 300
+                                font-family : $family-primary
+                                &::after
+                                    content : ''
+                                    width : 0.5em
+                                    height : 1em
+                                    display : inline-block 
+                                    background : url(#{$image-path}event_naegok_lanking_liter_icon.png) no-repeat right bottom
+                                    background-size : 95%
+                                    vertical-align : -0.1em
+                    &:first-child
                         &::before
                             content : ''
                             position : absolute
-                            top : -30%
+                            top : -26%
                             left : 40%
                             width : 16.16%
                             height : 30.68%
@@ -5645,7 +5678,7 @@
                     &.badge-joint::before
                         content : ''
                         position : absolute
-                        top : -2%
+                        top : -1%
                         left : -12%
                         width : 25.89%
                         height : 71.795%
@@ -5732,6 +5765,10 @@
                         font-size : 3.8667vw
                     .name
                         font-size : 4.5333vw
+                        .liter
+                            font-size : 3.4667vw
+                            &::after
+                                // height : 3.4667vw
                 &.nocount
                     .name
                         font-size : 5.0667vw
@@ -5741,4 +5778,6 @@
                     li
                         .text
                             font-size : 3.4667vw
+                            .name .liter
+                                font-size : 3.2vw
 
