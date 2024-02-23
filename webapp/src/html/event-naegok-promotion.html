@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+@@include('./include/head.html')
+
+<body>
+  @@include('./include/skip_navi.html')
+
+  <div id="container">
+    <!-- Contents -->
+    <div class="container event-container naegok-promotion">
+
+        <section class="head">
+            <img src="./images/event_naegok_lanking_top.png" alt="">
+        </section>
+        <section class="body">
+            <img src="./images/event_naegok_lanking_body.png" alt="랭킹별 주유쿠폰 금액 안내">
+            <div class="event-form">
+                <!-- 이벤트 참여 전 -->
+                <div class="event-input">
+                    <p class="event-input-title">이벤트 참여 방법</p>
+                    <div class="step1">
+                        <p class="step">step 1</p>
+                        <p class="step-text">랭킹에 노출될 닉네임 입력</p>
+                        <div class="input-box"><!-- 닉네임 에러인 경우 .onerror 추가 -->
+                            <input type="text" class="nickname" placeholder="닉네임을 입력해 주세요.">
+                            <button class="del-btn" onclick="clearInput(this)"></button>
+                            <p class="error-message">사용할 수 없는 닉네임입니다.</p>
+                        </div>
+                    </div>
+                    <div class="step2">
+                        <p class="step">step 2</p>
+                        <p class="step-text">이벤트 참여를 위한 바로 주유 정보 제공 동의</p>
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            <i></i>
+                            <strong>이벤트 참여를 위한 바로주유 정보 제공에 동의 합니다.</strong>
+                        </label>
+                    </div>
+                    <div class="event-button">
+                        <a href="#">응모하기</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bottom">
+            <img src="./images/event_naegok_lanking_notice.png" alt="이벤트 안내사항">
+            <div class="event-button">
+                <a href="#"><img src="./images/event_naegok_lanking_notice_btn.png" alt="바로주유 등록하기"></a>
+            </div>
+        </section>
+
+    </div>
+    <!-- // Contents -->
+  </div>
+
+  <!-- <script src="https://code.jquery.com/jquery-3.6.4.js"></script> -->
+  <script>
+  
+    // input 'X' 버튼 클릭 시 초기화 이벤트
+    function clearInput(e) {
+      e.parentNode.querySelector(".nickname").value = '';
+    }
+  </script>
+</body>
+
+</html>
