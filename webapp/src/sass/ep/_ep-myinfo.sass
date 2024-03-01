@@ -994,16 +994,17 @@
             family : $family-secondary
             weight : 500
     .box-gas-category
-        margin-top : 12px
+        margin-top : 8px
         font-size : 0
+        margin-left : -4px
         &>span
             display : inline-block
             padding : 1px 8px 2px
             background-color : $ep-white-smoke-0
             border-radius : 100px
             font-size : $size-small
-            &+span
-                margin-left : 4px
+            margin-left : 4px
+            margin-top : 4px
     .load-directions
         display : block
         margin : 0 -24px
@@ -1976,22 +1977,21 @@
         li
             display : inline-block
             min-height : 32px
-            padding : 5px 0 5px 35px
+            padding : 5px 0 0 35px
             margin :
                 left : 0
-                right : 32px
                 bottom : 12px
             height : 100%    
+            min-width : 138px
             &:before
                 position : absolute
-                // display : inline-block
                 left : 0
                 top : 0
                 margin : 
                     left : 0
                     right : 8px
             .mblock
-                line-height : 1.83
+                line-height : 17px
             & + li 
                 margin :
                     left : 0
@@ -2007,6 +2007,18 @@
                 &:before
                     background :
                         image : url(#{$image-path}ic-pay-card.svg)
+            &.ico-truck
+                &:before
+                    background :
+                        image : url(#{$image-path}ic-truck.svg)
+            &.ico-taxi
+                &:before
+                    background :
+                        image : url(#{$image-path}ic-taxi.svg)
+            &.ico-disabled-person
+                &:before
+                    background :
+                        image : url(#{$image-path}ic-disabled-person.svg)
 .list-facility-info2
   li
     text-align : center                     
