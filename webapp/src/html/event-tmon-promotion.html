@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+@@include('./include/head.html')
+
+<body>
+  @@include('./include/skip_navi.html')
+
+  <div id="container">
+    <!-- Contents -->
+    <div class="container event-container tmon-promotion">
+
+        <section class="head">
+            <img src="./images/event_tmon_top_banner.png" alt="GS칼텍스 X TMON">
+            <img src="./images/event_tmon_top.png" alt="에너지 플러스와 티몬이 드리는 특별한 주유비 혜택">
+        </section>
+        <section class="body">
+            <img src="./images/event_tmon_body.png" alt="에너지플러스 신규 회원분들께만! 바로주유 할인쿠폰 5,000원을 드립니다.">
+            <div class="event-input">
+                <div class="input-box">
+                    <input type="text" class="couponnum" placeholder="쿠폰번호를 입력해 주세요.">
+                    <button class="del-btn" onclick="clearInput(this)"></button>
+                </div>
+            </div>
+            <div class="event-button">
+                <a href="#"><img src="./images/event_tmon_body_btn.png" alt="쿠폰받기"></a>
+            </div>
+        </section>
+        <section class="bottom">
+            <img src="./images/event_tmon_bottom.png" alt="이벤트 안내사항">
+            <div class="event-button">
+                <a href="#"><img src="./images/event_tmon_botton_btn.png" alt="바로주유 가능 주유소 확인"></a>
+            </div>
+        </section>
+
+    </div>
+    <!-- // Contents -->
+  </div>
+
+  <script>
+    // input 'X' 버튼 클릭 시 초기화 이벤트
+    function clearInput(e) {
+      e.parentNode.querySelector(".couponnum").value = '';
+    }
+  </script>
+</body>
+
+</html>
