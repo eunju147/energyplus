@@ -5832,13 +5832,16 @@
 
 
 .eidition3_2403mth
+    .head
+        background-color : #dae8fe
     .body
         position : relative
-        .event-button
-            position : absolute
-            bottom : 1.44%
-            left : 6%
-            right : 6%
+    .event-button-fixed
+        position : fixed
+        margin : 0 6%
+        width : 88%
+        bottom : 4.3vw
+        z-index :  1
     .bottom
         position : relative
         .event-button
@@ -5846,3 +5849,12 @@
             top : 32.69%
             left : 10.4%
             width : 64%
+        & +.bottom 
+            background : #f1f1f1
+            padding-bottom : 40px
+@media (min-width: 750px)
+    .eidition3_2403mth
+        .event-button-fixed
+            margin : 0 45px
+            width : calc(750px - 90px)
+            bottom : 30px
